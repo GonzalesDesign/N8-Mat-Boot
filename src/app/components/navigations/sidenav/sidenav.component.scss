@@ -1,0 +1,21 @@
+mat-sidenav-container {
+   height: 100%;
+   position: fixed;
+}
+
+mat-sidenav, mat-sidenav-content {
+   // padding: 16px;
+   // opacity: .5;
+}
+
+mat-sidenav {
+   background-color: lightcoral;
+   width: 200px;
+   z-index: 1000;
+}
+
+.app-content {
+   border: 4px solid purple;
+   background: transparent;
+   // opacity: .5;
+}

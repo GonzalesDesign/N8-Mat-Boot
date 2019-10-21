@@ -1,0 +1,24 @@
+<!-- <app-top-bar></app-top-bar> -->
+
+<!-- <p>Material Menu with Dropdown:</p> -->
+
+<!-- <mat-menu #appMenu="matMenu">
+   <button mat-menu-item routerLink="/typography">Front End</button>
+   <button mat-menu-item>Back End</button>
+</mat-menu>
+
+<button mat-raised-button [matMenuTriggerFor]="appMenu">Menu</button> -->
+<div class="toolbarContainer">
+   <ng-container *ngFor="let menu of aComponentsMenu; let i = index;" class="menuContainer">
+   <!-- <div *ngFor="let menu of aComponentsMenu; let i = index;" class="menuContainer"> -->
+      <mat-menu #appMenu="matMenu" class="matmenu">
+         <!-- <button mat-menu-item routerLink="/typography">Front End</button> -->
+         <div *ngFor="let submenu of menu.subMenu;" class="submenu">
+            <button mat-menu-item routerLink={{submenu.link}} class="submenuBtn">{{submenu.name}}</button>
+         </div>
+      </mat-menu>
+      <button mat-button [matMenuTriggerFor]="appMenu" class="menuBtn">{{menu.title}}</button>
+      <!-- {{menu.title[i].subMenu[i].name}} -->
+   <!-- </div> -->
+   </ng-container>
+</div>

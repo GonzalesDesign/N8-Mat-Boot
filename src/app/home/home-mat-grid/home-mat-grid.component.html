@@ -1,0 +1,69 @@
+
+
+<div style="padding: 150px 0 0 100px;">
+   <h1 class="fontFamily mat-display-1"
+      style="
+         margin: 0;
+         text-transform: capitalize;
+      ">
+      Material Grid List: Config Uno
+   </h1>
+   <div class="fontFamily mat-subheading-1">
+      HomeMatGridComponent
+   </div>
+</div>
+
+<mat-grid-list
+   [cols]="viewColumns"
+   rowHeight="100px"
+   style="margin: 0 100px; border: 0px solid orange;">
+
+   <mat-grid-tile *ngFor="let article of aArticles"
+      [rowspan]="article.rows"
+      [colspan]="article.cols"
+      [style.backgroundImage]="'url('+article.imgUrl+')'"
+      [style.backgroundRepeat]="'no-repeat'"
+      [style.backgroundSize]="'cover'"
+      >
+      <!-- [style.backgroundImage]="'url(./../../../../assets/media/ali.jpg)'" -->
+      <!-- [style.background]="article.color" -->
+      <!-- [colspan]="colWidth" -->
+
+      <!-- header -->
+      <mat-grid-tile-header *ngIf="article.title"
+         style="
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            ">{{article.title}} •
+               {{article.rows}}/{{article.cols}}/{{screenWidth}}
+      </mat-grid-tile-header>
+
+      <!-- footer -->
+      <mat-grid-tile-footer *ngIf="article.subtitle"
+         style="
+            height: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border: 0px solid wheat;
+            ">
+
+         <!-- subtitle -->
+         <span
+            style="
+               font-size: 1rem;
+               text-transform: uppercase;
+               ">{{article.subtitle}}
+         </span>
+
+         <!-- article text copy -->
+         <span *ngIf="article.article"
+            style="
+               line-height: 1.5;
+               ">{{article.article}}
+         </span>
+      </mat-grid-tile-footer>
+
+   </mat-grid-tile>
+</mat-grid-list>

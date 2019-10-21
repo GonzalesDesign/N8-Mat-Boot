@@ -1,0 +1,151 @@
+<app-top-bar></app-top-bar>
+
+<div style="
+   padding: 150px 0 10px 100px;
+   background: var(--mat-color-warning-100);
+   box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.5);
+   ">
+   <h1 class="fontFamily mat-display-1" style=" margin: 0; text-transform: capitalize; ">
+      Material Card
+   </h1>
+   <div class="fontFamily mat-subheading-1">
+      CardComponent
+   </div>
+</div>
+
+<div style="padding: 40px; border: 1px solid lightsalmon;">
+
+   <!--=| Material Card |=-->
+   <mat-card style="border: 1px solid red;" style="max-width: 300px;">
+
+      <!-- header -->
+      <mat-card-header style="border: 0px solid orange;">
+         <img mat-card-avatar src="./../../../../assets/media/avatar1.jpg" alt="avatar">
+         <mat-card-title>Material Card Title</mat-card-title>
+         <mat-card-subtitle>Material Card Sub-Title</mat-card-subtitle>
+      </mat-card-header>
+
+      <!-- image -->
+      <!-- <img src="./../../../../assets/th.jpeg" alt=""> -->
+      <div style="
+      background-image: url('./../../../../assets/th.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px;
+      ">
+         <!-- max-width: 400px; -->
+      </div>
+
+      <!-- content -->
+      <mat-card-content style="margin: 10px 0; border: 0px solid yellowgreen;">
+         <p class="fontFamily mat-body-1" style="
+               font-family: var(--rlg-font-OpenSans);
+               font-style: normal;
+               font-weight: 300;
+               line-height: 1.6;
+               ">
+            Material Card A card is a sheet of material that may contain a photo, text, and a link about a single
+            subject. They may display
+            content containing elements of varying size, such as photos with captions of variable length.</p>
+      </mat-card-content>
+   </mat-card>
+
+</div>
+
+
+
+
+<!---=| Array of Cards |=--->
+<div class="mainWrapper" style="display: flex; flex-direction: column; border: 4px solid rgb(47, 152, 238);">
+
+   <!-- Hero image -->
+   <div style="width: 100vw; height: 300px; border: 1px solid gray;">
+      <mat-grid-list cols="12" rowHeight="200px">
+         <!-- style="width: 100vw;"> -->
+            <mat-grid-tile rowspan="2" colspan="12">
+                  <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+               <img mat-card-image src="./../../../../assets/media/komplex.jpg" alt="komplex"
+               style="
+                  align-self: center;
+                  max-width: 100%;
+                  height: auto;
+                  border: 3px solid red;
+                  ">
+                  <!-- align-self: flex-start; -->
+            </mat-grid-tile>
+      </mat-grid-list>
+   </div>
+
+   <!-- Cards array in a Grid -->
+   <mat-grid-list cols="12" rowHeight="300px" style="
+      margin: 0 100px;
+      border: 1px solid rgb(70, 8, 70);">
+      <!-- background-color: plum; -->
+
+      <div *ngFor="let card of aCards; let i =index;">
+
+      <mat-grid-tile [rowspan]=aRows[i] [colspan]=aCols[i]
+         [style.background]="card.bgColor">
+         <!-- style="
+            background-image:
+            linear-gradient(to bottom,
+            rgba(255,255,255,1) .1,
+            rgba(10,10,10,0) ,5,
+            rgba(10,10,10,.9) 1)"> -->
+
+         <mat-card [style.background]="card.bgColor">
+            <mat-card-header>
+               <img mat-card-avatar [src]="card.avatar" alt="avatar">
+               <mat-card-title style="text-transform: uppercase;">{{card.title}}</mat-card-title>
+               <mat-card-subtitle>{{card.author}}</mat-card-subtitle>
+            </mat-card-header>
+            <!-- style="height:800px; border: 1px solid rgb(216, 216, 216);" -->
+            <div
+               [style.backgroundImage]="'url('+card.imgUrl+')'"
+               [style.backgroundRepeat]="'no-repeat'"
+               [style.backgroundSize]="card.size"
+               [style.height.px]="aImgHeights[i]"
+               style="margin-bottom: 20px;
+                  display: block;
+                  background-position: top;
+                  border: 1px solid rgba(255, 255, 255, 0.39);
+                  ">
+                  <!-- height:800px; -->
+               <!-- [style.backgroundPosition]="'top'" -->
+               <!-- [style.height.px]="900" -->
+               <!-- [style.height.vh]="50" -->
+               <!-- [style.width.vw]="50" -->
+            </div>
+            <!-- [style.width.px]="900" -->
+
+            <mat-card-content>
+               <p style="color: darkslategray; font-size: .8rem;">{{card.info}}</p>
+            </mat-card-content>
+         </mat-card>
+      </mat-grid-tile>
+
+   </div>
+
+   </mat-grid-list>
+
+</div>
+
+<!-- <mat-card class="example-card">
+   <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+   </mat-card-header>
+   <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+   <mat-card-content>
+      <p>
+         The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+         A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+         bred for hunting.
+      </p>
+   </mat-card-content>
+   <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+   </mat-card-actions>
+</mat-card> -->

@@ -1,0 +1,33 @@
+<app-top-bar></app-top-bar>
+
+<p>Material Spinners:</p>
+
+<!-- <div>
+   <mat-progress-spinner value="90" style="align-items: center; stroke:red;"></mat-progress-spinner>
+</div> -->
+
+<div style="
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border:0px solid grey;
+   ">
+
+   <div *ngIf="showSpinner" color="secondary"
+      style="
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         border: 0px solid cyan;
+         stroke:hotpink;
+         ">
+      <mat-spinner></mat-spinner>
+      <div class="mat-caption colorDanger">find a way to colorized the stroke</div>
+   </div>
+
+   <div style="border: 0px solid greenyellow;">
+      <button (click)="fLoadData()" mat-raised-button>{{loadDataLabel}}</button>
+   </div>
+
+</div>

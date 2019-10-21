@@ -1,0 +1,58 @@
+
+<app-top-bar></app-top-bar>
+
+<div style="
+   padding: 150px 0 10px 100px;
+   background: var(--mat-color-danger-300);
+   box-shadow: 0px 5px 15px rgba(128, 128, 128, .7);
+   ">
+   <h1 class="fontFamily mat-display-1" style="
+         color: var(--mat-color-primary-900);
+         margin: 0; text-transform: capitalize; ">
+      Material Grid List
+   </h1>
+   <div class="fontFamily mat-subheading-1">
+         HomeGridFeaturedComponent
+   </div>
+</div>
+<!-- =--------------------------------------------------= -->
+
+<div class="featuredWrapper">
+
+   <div class="featuredContainer"
+      style="
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      ">
+
+      <div *ngFor="let card of aCards; let i = index;"
+         style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            ">
+         <div [style.backgroundImage]="'url(' + card.imgUrl + ')'"
+            style="
+               background-repeat: no-repeat;
+               background-size: cover;
+               justify-content: flex-end;
+               width: 200px; height: 300px;
+               padding: 10px;
+               border: 0px solid orange;
+               ">
+            <span style="
+               color: white;
+               ">{{card.title}}
+            </span>
+         </div>
+      </div>
+   </div>
+</div>
+
+<mat-grid-list cols="4" rowHeight="20px">
+   <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows"
+      [style.background]="tile.color">
+      {{tile.text}}
+   </mat-grid-tile>
+</mat-grid-list>

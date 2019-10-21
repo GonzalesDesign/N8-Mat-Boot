@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+@import './themes/theme-fonts.scss';
+@import './themes/theme-colors.scss';
+@import './themes/theme-styles.scss';
+
+// Imports functions, variables, and mixins that are needed by other Bootstrap files
+@import './themes/_variables.scss';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+// Import Bootstrap Reboot
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid"; // add the grid
+@import './themes/_reset.scss';
+
+
+html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// h1, h2, h3, h4, h5 {
+//    font-weight: 300;
+// }
+
+
+html {
+   // font-family: var(--rlg-font-OpenSans);
+   font-family: var(--rlg-font-Roboto);
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+ }
+ body {
+   margin: 0;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ h1, h2, h3, h4, h5, p {
+   font-family: inherit;
+   font-weight: 300;
+   color: var(--mat-color-dark-300);
+ }
+
+//  h2, h3, h4, h5, p {
+//    color: var(--mat-color-dark-300);
+//  }
+
+//  h1 {
+//    font-size: 30px;
+//    color: var(--mat-color-dark-500);
+//  }
+//  h2 {
+//    font-size: 26px;
+//  }
+//  h3 {
+//    font-size: 24px;
+//  }
+//  h4 {
+//    font-size: 20px;
+//  }
+//  h5 {
+//    font-size: 18px;
+//  }
+ p {
+   font-family: var(--rlg-font-Merriweather);
+   // font-size: 16px;
+   font-weight: 400;
+   font-style: italic;
+   line-height: 1.5;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ ul {
+   li {
+     list-style: none;
+     a {
+       text-decoration: none;
+     }
+   }
+ }

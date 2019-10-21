@@ -1,0 +1,61 @@
+<app-top-bar></app-top-bar>
+
+<div style="
+   padding: 150px 0 10px 100px;
+   background: var(--mat-color-primary-100);
+   box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.5);
+   ">
+   <h1 class="fontFamily mat-display-1" style="
+         color: var(--mat-color-primary-900);
+         margin: 0; text-transform: capitalize; ">
+      Typography
+   </h1>
+   <div class="fontFamily mat-subheading-1">
+      TypographyComponent
+   </div>
+</div>
+<!-- =--------------------------------------------------= -->
+
+<div style="padding: 40px;">
+   <mat-grid-list cols="12" rowHeight="100px" style=" background: white; border: 0px solid purple;">
+
+      <mat-grid-tile [rowspan]="aRow[0]" [colspan]="aColWidth[0]" style=" background: lightgreen;">
+         <div class="tileContainer displayContainer">
+            <div class="fontFamily mat-display-4">Display 4</div>
+            <div class="fontFamily mat-display-3">Display 3</div>
+            <div class="fontFamily mat-display-2">Display 2</div>
+            <div class="fontFamily mat-display-1">Display 1</div>
+         </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [rowspan]="aRow[1]" [colspan]="aColWidth[1]" style=" background: palegoldenrod;">
+         <div class="tileContainer headlineContainer">
+            <div class="fontFamily mat-headline">fontFamily mat-headline Heading for h1</div>
+            <div class="fontFamily mat-title">fontFamily mat-title Heading for h2</div>
+            <div class="fontFamily mat-subheading-2">fontFamily mat-subheading-2 Heading for h3</div>
+            <div class="fontFamily mat-subheading-1">fontFamily mat-subheading-1 Heading for h4</div>
+         </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [rowspan]="aRow[2]" [colspan]="aColWidth[2]" style="background: pink; display: flex;">
+         <div class="tileContainer headingContainer">
+            <div class="fontFamily mat-typography">
+               <h1>Heading h1</h1>
+               <h2>Heading h2</h2>
+               <h3>Heading h3</h3>
+               <h4>Heading h4</h4>
+            </div>
+         </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [rowspan]="aRow[3]" [colspan]="aColWidth[3]" style=" background: paleturquoise;">
+         <div class="tileContainer bodyContainer">
+            <div class="fontFamily mat-body-1">Body text 1</div>
+            <div class="fontFamily mat-body-2">Body text 2</div>
+            <div class="fontFamily mat-caption">Caption text 2</div>
+         </div>
+      </mat-grid-tile>
+
+   </mat-grid-list>
+
+</div>

@@ -1,0 +1,120 @@
+/******************************************************
+* Component: Shared Colors
+* Copyright © 2019 GonzalesDesign
+* Platform: Angular8 • Material
+* Updated: 19.10.21
+* Note: For development use only!
+*******************************************************/
+:root {
+	--mat-color-primary: #3880ff;
+	--mat-color-primary-rgb: 56,128,255;
+	--mat-color-primary-contrast: #ffffff;
+	--mat-color-primary-contrast-rgb: 255,255,255;
+	--mat-color-primary-shade: #3171e0;
+	--mat-color-primary-tint: #4c8dff;
+
+	--mat-color-secondary: #03bdd6;
+	--mat-color-secondary-rgb: 3,189,214;
+	--mat-color-secondary-contrast: #000000;
+	--mat-color-secondary-contrast-rgb: 0,0,0;
+	--mat-color-secondary-shade: #03a6bc;
+	--mat-color-secondary-tint: #1cc4da;
+
+	--mat-color-tertiary: #9c27af;
+	--mat-color-tertiary-rgb: 156,39,175;
+	--mat-color-tertiary-contrast: #ffffff;
+	--mat-color-tertiary-contrast-rgb: 255,255,255;
+	--mat-color-tertiary-shade: #89229a;
+	--mat-color-tertiary-tint: #a63db7;
+
+	--mat-color-success: #8dc34c;
+	--mat-color-success-rgb: 141,195,76;
+	--mat-color-success-contrast: #000000;
+	--mat-color-success-contrast-rgb: 0,0,0;
+	--mat-color-success-shade: #7cac43;
+	--mat-color-success-tint: #98c95e;
+
+	--mat-color-warning: #ffce00;
+	--mat-color-warning-rgb: 255,206,0;
+	--mat-color-warning-contrast: #ffffff;
+	--mat-color-warning-contrast-rgb: 255,255,255;
+	--mat-color-warning-shade: #e0b500;
+	--mat-color-warning-tint: #ffd31a;
+
+	--mat-color-danger: #e81e64;
+	--mat-color-danger-rgb: 232,30,100;
+	--mat-color-danger-contrast: #ffffff;
+	--mat-color-danger-contrast-rgb: 255,255,255;
+	--mat-color-danger-shade: #cc1a58;
+	--mat-color-danger-tint: #ea3574;
+
+	--mat-color-dark: #222428;
+	--mat-color-dark-rgb: 34,34,34;
+	--mat-color-dark-contrast: #ffffff;
+	--mat-color-dark-contrast-rgb: 255,255,255;
+	--mat-color-dark-shade: #1e2023;
+	--mat-color-dark-tint: #383a3e;
+
+	--mat-color-medium: #989aa2;
+	--mat-color-medium-rgb: 152,154,162;
+	--mat-color-medium-contrast: #ffffff;
+	--mat-color-medium-contrast-rgb: 255,255,255;
+	--mat-color-medium-shade: #86888f;
+	--mat-color-medium-tint: #a2a4ab;
+
+	--mat-color-light: #f4f5f8;
+	--mat-color-light-rgb: 244,244,244;
+	--mat-color-light-contrast: #000000;
+	--mat-color-light-contrast-rgb: 0,0,0;
+	--mat-color-light-shade: #d7d8da;
+	--mat-color-light-tint: #f5f6f9;
+
+	--mat-color-primary-1000: #02225a;
+	--mat-color-primary-900: #023386;
+	--mat-color-primary-800: #0548bd;
+	--mat-color-primary-700: #0659e9;
+	--mat-color-primary-600: #1869f5;
+	--mat-color-primary-400: #5a96fd;
+	--mat-color-primary-300: #7eacfa;
+	--mat-color-primary-200: #adcafc;
+	--mat-color-primary-100: #d4e2fc;
+
+	--mat-color-dark-1000: rgb(1, 2, 8);
+	--mat-color-dark-900: rgb(5, 7, 14);
+	--mat-color-dark-800: rgb(10, 12, 19);
+	--mat-color-dark-700: rgb(20, 22, 29);
+	--mat-color-dark-600: rgb(28, 30, 36);
+	--mat-color-dark-500: rgb(34, 36, 40);
+	--mat-color-dark-400: rgb(68, 71, 76);
+	--mat-color-dark-300: rgb(110, 113, 117);
+	--mat-color-dark-200: rgb(170, 172, 175);
+   --mat-color-dark-100: rgb(217, 220, 223);
+   --mat-color-dark-50: rgb(243, 243, 243);
+
+   --mat-color-red: rgb(185, 3, 3);
+
+   --mat-color-danger-1000: rgb(34, 0, 12);
+   --mat-color-danger-900: rgb(78, 3, 29);
+   --mat-color-danger-800: rgb(129, 4, 48);
+   --mat-color-danger-700: rgb(180, 6, 67);
+   --mat-color-danger-600: rgb(232, 30, 100);
+   --mat-color-danger-500: rgb(232, 30, 100);
+   --mat-color-danger-400: rgb(221, 36, 101);
+   --mat-color-danger-300: rgb(231, 110, 153);
+   --mat-color-danger-200: rgb(229, 160, 184);
+   --mat-color-danger-100: rgb(241, 217, 226);
+
+   --mat-color-warning-1000: rgb(27, 22, 0);
+   --mat-color-warning-900: rgb(75, 60, 2);
+   --mat-color-warning-800: rgb(109, 87, 2);
+   --mat-color-warning-700: rgb(158, 127, 4);
+   --mat-color-warning-600: rgb(214, 172, 4);
+   --mat-color-warning-500: rgb(255, 206, 0);
+   --mat-color-warning-400: rgb(250, 210, 49);
+   --mat-color-warning-300: rgb(252, 222, 102);
+   --mat-color-warning-200: rgb(252, 233, 158);
+   --mat-color-warning-100: rgb(252, 244, 214);
+
+
+  }
+

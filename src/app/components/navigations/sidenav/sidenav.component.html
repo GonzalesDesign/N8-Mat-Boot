@@ -1,0 +1,36 @@
+<!-- <p>Material SideNav:</p> -->
+
+<!-- <mat-sidenav-container>
+   <mat-sidenav #sidenav mode="side" [(opened)]="opened">Sidenav</mat-sidenav>
+   <mat-sidenav-content>Main
+      <button mat-raised-button (click)="opened=!opened">Toggle</button>
+   </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+
+<mat-sidenav-container>
+   <mat-sidenav #sidenav mode="side" class="app-sidenav">
+      <mat-nav-list *ngFor="let menu of aMenuData">
+         <a mat-list-item class="routerLinkWrap" routerLink="/" style="text-transform: uppercase;">{{menu.title}}</a>
+
+         <mat-nav-list *ngFor="let submenu of menu.subMenu">
+            <a mat-list-item class="routerLinkWrapX" routerLink="/">{{submenu.name}}</a>
+         </mat-nav-list>
+         <!-- <a mat-list-item class="routerLinkWrap" routerLink="/typography">Typography</a>
+          <a mat-list-item href="page1.html">Page 1</a>
+          <a mat-list-item href="page2.html">Page 2</a>
+          <a mat-list-item href="page3.html">Page 3</a> -->
+      </mat-nav-list>
+   </mat-sidenav>
+   <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+         <mat-icon class="mat-24">menu</mat-icon>
+      </button>
+   </mat-toolbar>
+   <div class="app-content">
+
+      <!-- <div style="width: 100vw; height: 250px;"></div> -->
+      <!-- Example Content area<br><br><br><br><br><br><br> -->
+
+   </div>
+</mat-sidenav-container>

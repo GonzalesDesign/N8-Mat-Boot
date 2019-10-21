@@ -1,0 +1,74 @@
+
+
+
+mat-grid-list {
+   // padding: 0px; margin: 0px;
+
+   mat-grid-tile {
+      // padding: 0px; margin: 0px;
+      .mat-figure {
+         border: 10px solid red;
+      }
+
+      // .tileContainer {
+      //    flex: auto;
+      //    border: 2px solid grey;
+      //    padding: 0px; margin: 0px;
+
+      //    // .fontFamily {
+      //    //    font-family: var(--rlg-font-OpenSans);
+      //    //    padding: 0px;
+      //    //    margin: 0px 0px 10px 0px;
+      //    //    border: 1px solid orange;
+      //    // }
+      // }
+   }
+}
+.tileContainer {
+   flex: auto;
+   margin: 0px 0px 10px 20px;
+   // border: 2px solid grey;
+}
+.fontFamily {
+   font-family: var(--rlg-font-OpenSans);
+   padding: 0px;
+   margin: 0px 0px 10px 0px;
+   // border: 1px solid orange;
+}
+// .mat-figure {
+//    align-items: flex-start;
+//    justify-content: flex-start;
+// }
+// .fontFamily {
+//    font-family: var(--rlg-font-OpenSans);
+//    // padding: 0px;
+//    border: 1px solid orange;
+// }
+
+// .mainWrapper {
+//    display: flex;
+//    flex-direction: row;
+
+//    .headline {
+//       border: 1px solid orange;
+//    }
+
+//    .displayContainer {
+//       border: 1px solid orange;
+//    }
+
+//    .headlineContainer {
+//       width: 200px;
+//       border: 1px solid orange;
+//    }
+
+//    .bodyContainer {
+//       width: 200px;
+//       border: 1px solid orange;
+//    }
+
+//    .headingContainer {
+//       width: 200px;
+//       border: 1px solid orange;
+//    }
+// }

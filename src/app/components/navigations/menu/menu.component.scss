@@ -1,0 +1,43 @@
+@import "./../../../../styles.scss";
+
+.toolbarContainer {
+   display: flex;
+   // flex-direction: row;
+   flex-flow: row wrap;
+   // width: 70vw;
+   justify-content: space-evenly;
+   // border: 1px solid white;
+}
+// .menuContainer {
+   // width: 200px;
+   // flex-flow: row wrap;
+   // border: 1px solid white;
+// }
+.menuBtn {
+   @include fontFamilyWeightSizeColor(
+      $fontOpenSans,
+      600,
+      0.7rem,
+      var(--mat-color-primary-100)
+   );
+   text-transform: uppercase;
+   // border: 1px solid white;
+}
+
+.matmenu {
+   background: var(--mat-color-secondary);
+}
+
+.submenu {
+   background: var(--mat-color-secondary);
+
+   .submenuBtn {
+      @include fontFamilyWeightSizeColor(
+         $fontOpenSans,
+         600,
+         0.8rem,
+         var(--mat-color-primary-100)
+      );
+      text-transform: uppercase;
+   }
+}
