@@ -1,10 +1,9 @@
 @import "./../../../../styles.scss";
 
+/*--=| Main navigation drop down menu |=---*/
 .toolbarContainer {
    display: flex;
-   // flex-direction: row;
    flex-flow: row wrap;
-   // width: 70vw;
    justify-content: space-evenly;
    // border: 1px solid white;
 }
@@ -14,22 +13,19 @@
    // border: 1px solid white;
 // }
 .menuBtn {
-   @include fontFamilyWeightSizeColor(
-      $fontOpenSans,
-      600,
-      0.7rem,
-      var(--mat-color-primary-100)
-   );
+   @include fontFamilyWeightSizeColor( $fontOpenSans, 600, 0.7rem, var(--mat-color-primary-100) );
    text-transform: uppercase;
    // border: 1px solid white;
 }
 
 .matmenu {
    background: var(--mat-color-secondary);
+   padding-top: 0px;
+   padding-bottom: 0px;
 }
 
 .submenu {
-   background: var(--mat-color-secondary);
+   background: var(--mat-color-dark-300);
 
    .submenuBtn {
       @include fontFamilyWeightSizeColor(

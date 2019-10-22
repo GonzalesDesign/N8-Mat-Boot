@@ -33,6 +33,9 @@ export class HomeMatGridComponent implements OnInit {
 
    public aRow = [8, 4, 4];
    public aCols = [6, 6, 6];
+   public titleFontSize = '1.2rem'; // ['1.2rem', '1rem', '.8rem'];
+   public subTitleFontSize = '1rem'; // ['1.2rem', '1rem', '.8rem'];
+   public infoFontSize = '.8rem'; // ['1rem', '.8rem', '.6rem'];
 
    public aArticles: Article[] = [];
 
@@ -103,6 +106,9 @@ export class HomeMatGridComponent implements OnInit {
          // this.colWidth = 12;
          this.aRow = [4, 4, 4];
          this.aCols = [12, 12, 12];
+         this.titleFontSize = '1rem';
+         this.subTitleFontSize = '.8rem';
+         this.infoFontSize = '.6rem';
          //   this.displayHamburger = true;
          //   this.showLogo = false;
          //   this.showMobile = true;

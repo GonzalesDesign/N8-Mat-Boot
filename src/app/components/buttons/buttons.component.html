@@ -1,45 +1,95 @@
 <app-top-bar></app-top-bar>
 
-<p>Material Buttons:</p>
-
-<div>
-   <button mat-button>Button</button>
-   <button mat-raised-button>Raised</button>
-   <button mat-flat-button>Flat</button>
-   <button mat-stroked-button>Stroked</button>
+<div style="
+   padding: 150px 0 10px 100px;
+   background: var(--mat-color-primary-600);
+   box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.5);
+   ">
+   <h1 class="fontFamily mat-display-1" style="
+         color: var(--mat-color-primary-200);
+         margin: 0; text-transform: capitalize; ">
+      Material Buttons
+   </h1>
+   <div class="fontFamily mat-subheading-1">
+      ButtonsComponent
+   </div>
 </div>
+<!-- =--------------------------------------------------= -->
 
-<div>
-   <!-- put styles in a class -->
-   <button style="color:var(--mat-color-warning); background:var(--mat-color-primary);" mat-raised-button>Primary</button>
-   <button style="color:var(--mat-color-warning); background:var(--mat-color-secondary);" mat-raised-button>Secondary</button>
-   <button style="color:var(--mat-color-warning); background:var(--mat-color-tertiary);" mat-raised-button>Tertiary</button>
-   <button style="color:var(--mat-color-danger); background:var(--mat-color-warning);" mat-raised-button>Warning</button>
-   <button style="color:var(--mat-color-warning); background:var(--mat-color-danger);" mat-raised-button>Danger</button>
-   <button style="color:var(--mat-color-warning); background:var(--mat-color-success);" mat-raised-button>Success</button>
-</div>
+<div style="padding: 40px;">
+   <p>Material Buttons:</p>
 
-<div>
-   <button mat-icon-button>Icon</button>
-   <button mat-fab>Fab</button>
-   <button mat-mini-fab>Mini</button>
-</div>
+   <div>
+      <button mat-button>Button</button>
+      <button mat-raised-button>Raised</button>
+      <button mat-flat-button>Flat</button>
+      <button mat-stroked-button>Stroked</button>
+   </div>
 
-<hr>
+   <div>
+      <!-- put styles in a class -->
+      <button style="color:var(--mat-color-warning);
+         background:var(--mat-color-primary);"
+         mat-raised-button>
+         Primary
+      </button>
 
-<p>Material Toggle Buttons:</p>
+      <button style="color:var(--mat-color-warning);
+         background:var(--mat-color-secondary);"
+         mat-raised-button>
+         Secondary
+      </button>
 
-<div>
-   <mat-button-toggle checked disableRipple #toggleBtn> <!-- add checked to defaul to true. disableRipple -->
-      {{toggleBtn.checked}}
-   </mat-button-toggle>
-</div>
+      <button style="color:var(--mat-color-warning);
+         background:var(--mat-color-tertiary);"
+         mat-raised-button>
+         Tertiary
+      </button>
 
-<div>
-   <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple> <!-- add multiple select multiple values -->
-        <mat-button-toggle value="angular" (click)="onToggleBtn()">Angular</mat-button-toggle>
-        <mat-button-toggle value="react">React</mat-button-toggle>
-        <mat-button-toggle value="vue">Vue</mat-button-toggle>
-   </mat-button-toggle-group>
-   {{toggleGroup.value}}
+      <button style="color:var(--mat-color-danger);
+         background:var(--mat-color-warning);"
+         mat-raised-button>
+         Warning
+      </button>
+
+      <button style="color:var(--mat-color-warning);
+         background:var(--mat-color-danger);"
+         mat-raised-button>
+         Danger
+      </button>
+
+      <button style="color:var(--mat-color-warning);
+         background:var(--mat-color-success);"
+         mat-raised-button>
+         Success
+      </button>
+
+   </div>
+
+   <div>
+      <button mat-icon-button>Icon</button>
+      <button mat-fab>Fab</button>
+      <button mat-mini-fab>Mini</button>
+   </div>
+
+   <hr>
+
+   <p>Material Toggle Buttons:</p>
+
+   <div>
+      <mat-button-toggle checked disableRipple #toggleBtn>
+         <!-- add checked to defaul to true. disableRipple -->
+         {{toggleBtn.checked}}
+      </mat-button-toggle>
+   </div>
+
+   <div>
+      <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+         <!-- add multiple select multiple values -->
+         <mat-button-toggle value="angular" (click)="onToggleBtn()">Angular</mat-button-toggle>
+         <mat-button-toggle value="react">React</mat-button-toggle>
+         <mat-button-toggle value="vue">Vue</mat-button-toggle>
+      </mat-button-toggle-group>
+      {{toggleGroup.value}}
+   </div>
 </div>

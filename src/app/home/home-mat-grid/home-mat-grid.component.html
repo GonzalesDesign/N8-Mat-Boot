@@ -18,7 +18,7 @@
    rowHeight="100px"
    style="margin: 0 100px; border: 0px solid orange;">
 
-   <mat-grid-tile *ngFor="let article of aArticles"
+   <mat-grid-tile *ngFor="let article of aArticles; let i = index;"
       [rowspan]="article.rows"
       [colspan]="article.cols"
       [style.backgroundImage]="'url('+article.imgUrl+')'"
@@ -31,8 +31,8 @@
 
       <!-- header -->
       <mat-grid-tile-header *ngIf="article.title"
+         [style.fontSize]="titleFontSize"
          style="
-            font-size: 1.2rem;
             text-transform: uppercase;
             ">{{article.title}} •
                {{article.rows}}/{{article.cols}}/{{screenWidth}}
@@ -51,14 +51,15 @@
 
          <!-- subtitle -->
          <span
+            [style.fontSize]="subTitleFontSize"
             style="
-               font-size: 1rem;
                text-transform: uppercase;
                ">{{article.subtitle}}
          </span>
 
          <!-- article text copy -->
          <span *ngIf="article.article"
+            [style.fontSize]="infoFontSize"
             style="
                line-height: 1.5;
                ">{{article.article}}

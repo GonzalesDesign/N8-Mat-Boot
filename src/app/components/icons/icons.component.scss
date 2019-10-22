@@ -2,6 +2,23 @@
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+.md-big {
+   font-size: 100px;
+   color: var(--mat-color-light);
+   text-shadow: 1px 2px 6px rgba(10, 10, 10, .5);
+}
+
+.material-icons.md-huge {
+   position: relative;
+   top: -400px;
+   // left: -100px;
+   font-size: 680px;
+   z-index: -100;
+   color: grey;
+}
 
 
-.material-icons.orange600 { color: #FB8C00; }
+.material-icons.orange600 {
+   color: #FB8C00;
+   font-size: 8rem;
+}

@@ -1,23 +1,42 @@
 <app-top-bar></app-top-bar>
 
-<p>Material Badges:</p>
+<div style="
+   padding: 150px 0 10px 100px;
+   background: var(--mat-color-warning-shade);
+   box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.5);
+   ">
+   <h1 class="fontFamily mat-display-1" style="
+         color: var(--mat-color-warning-contrast);
+         margin: 0; text-transform: capitalize; ">
+      Material Badges
+   </h1>
+   <div class="fontFamily mat-subheading-1">
+      BadgesComponent
+   </div>
+</div>
+<!-- =--------------------------------------------------= -->
 
- <hr>
-<div class="mat-caption">position:</div>
-<div> <span [matBadge]="notifications">Notifications </span> </div>
-<div> <span matBadge="50" matBadgePosition="below before">Notifications </span> </div>
-<div> <span matBadge="50" matBadgePosition="below after">Notifications </span> </div>
-<div> <span matBadge="50" matBadgePosition="above before">Notifications </span> </div>
-<button mat-mini-fab (click)="fAddLikes()">Like</button>
-<div class="mat-caption colorDanger">why does the badge move left when clicked Like</div>
+<div style="padding: 40px;">
+   <p>Material Badges:</p>
 
-<hr>
-<div class="mat-caption">sizes:</div>
-<div> <span matBadge="50" matBadgeSize="small">Notifications </span> </div>
-<div> <span matBadge="50" matBadgeSize="medium">Notifications </span> </div>
-<div> <span matBadge="50" matBadgeSize="large" matBadgeOverlap="false">Notifications </span> </div>
+   <hr>
+   <div class="mat-caption">position:</div>
+   <div> <span [matBadge]="notifications">Notifications </span> </div>
+   <div> <span matBadge="50" matBadgePosition="below before">Notifications </span> </div>
+   <div> <span matBadge="50" matBadgePosition="below after">Notifications </span> </div>
+   <div> <span matBadge="50" matBadgePosition="above before">Notifications </span> </div>
+   <button mat-mini-fab (click)="fAddLikes()">Like</button>
+   <div class="mat-caption colorDanger">why does the badge move left when clicked Like</div>
 
-<hr>
-<div class="mat-caption colorDanger">color: NOT WORKING!</div>
-<div> <span matBadge="50" matBadgeSize="medium" matBadgeColor="primary">Notifications </span> </div>
-<div> <span matBadge="50" matBadgeSize="large" matBadgeColor="secondary" style="color:var(--mat-color-tertiary)">Notifications </span> </div>
+   <hr>
+   <div class="mat-caption">sizes:</div>
+   <div> <span matBadge="50" matBadgeSize="small">Notifications </span> </div>
+   <div> <span matBadge="50" matBadgeSize="medium">Notifications </span> </div>
+   <div> <span matBadge="50" matBadgeSize="large" matBadgeOverlap="false">Notifications </span> </div>
+
+   <hr>
+   <div class="mat-caption colorDanger">color: NOT WORKING!</div>
+   <div> <span matBadge="50" matBadgeSize="medium" matBadgeColor="primary">Notifications </span> </div>
+   <div> <span matBadge="50" matBadgeSize="large" matBadgeColor="secondary"
+         style="color:var(--mat-color-tertiary)">Notifications </span> </div>
+</div>
